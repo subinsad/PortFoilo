@@ -1,0 +1,22 @@
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+}
+
+section {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+    gap: 30px;
+
+    background-color: slategray;
+    color: white;
+}

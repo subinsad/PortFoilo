@@ -1,0 +1,72 @@
+h1 {
+    margin: 0;
+}
+
+.line {
+    position: relative;
+}
+
+.Profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100vh;
+    gap: 18%;
+
+    background-color: slategray;
+    color: white;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-box {
+        margin: 0;
+        font-size: 28px;
+    }
+
+    .sub-title {
+        margin: 10px;
+
+        font-size: 40px;
+    }
+
+    .page-text {
+        font-size: 20px;
+    }
+}
+
+.move {
+    display: inline-block;
+    animation: rotateAnimationText 1s infinite linear; /* 1초 간격으로 텍스트 회전 애니메이션 적용 */
+}
+
+img {
+    display: inline-block;
+    animation: rotateAnimationImage 2s infinite; /* 2초 간격으로 이미지 회전 애니메이션 적용 */
+}
+
+@keyframes rotateAnimationText {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(30deg); /* 텍스트 회전 각도 설정 (여기서는 30도) */
+    }
+}
+
+@keyframes rotateAnimationImage {
+    0%,
+    100% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(3deg); /* 이미지 회전 각도 설정 (여기서는 45도) */
+    }
+}
