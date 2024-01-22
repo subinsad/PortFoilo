@@ -1,6 +1,8 @@
 import React from 'react';
 import { GrFormNextLink } from 'react-icons/gr';
 import { useNavigate } from 'react-router-dom';
+import { FaGithub } from 'react-icons/fa';
+import { SiVelog } from 'react-icons/si';
 import './main.css';
 
 const LinkPage = () => {
@@ -19,9 +21,13 @@ const LinkPage = () => {
             <GrFormNextLink className="next left" onClick={handleNextClick1} />
             <div className="content">
                 <h1 className="link-title">My Profile Link</h1>
-                <div>
-                    <a href="https://github.com/subinsad">GitHub</a>
-                    <a href="https://velog.io/@subinsad/posts">Velog</a>
+                <div className="link-box">
+                    <a href="https://github.com/subinsad">
+                        <FaGithub />
+                    </a>
+                    <a href="https://velog.io/@subinsad/posts">
+                        <SiVelog />
+                    </a>
                 </div>
                 <p className="page-text">
                     This page is my created portfolio page{' '}
