@@ -6,7 +6,7 @@ import ProfilePage from './pages/ProfilePage';
 import LinkPage from './pages/LinkPage';
 
 const App = () => {
-    const [currentPage, setCurrentPage] = useState(0);
+    const [setCurrentPage] = useState(0);
 
     useEffect(() => {
         const handleScroll = () => {
