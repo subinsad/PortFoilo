@@ -28,7 +28,6 @@ const App = () => {
         <Router>
             <div className="App">
                 <Routes>
-                    {/* 두 개의 Route를 다르게 설정 */}
                     <Route path="/" element={<MainPage />} />
                     <Route path="/profile" element={<ProfilePage />} />
                     <Route path="/link" element={<LinkPage />} />

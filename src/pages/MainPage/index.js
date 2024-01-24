@@ -7,7 +7,7 @@ import './main.css';
 
 const MainPage = () => {
     const [greeting, setGreeting] = useState('Hello');
-    const navigate = useNavigate(); // useNavigate 훅 사용
+    const navigate = useNavigate(); 
 
     useEffect(() => {
         const intervalId = setInterval(() => {
